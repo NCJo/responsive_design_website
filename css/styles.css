@@ -1,5 +1,17 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background: #fff;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+.temp-red {
+  background-color: red;
 }
 .f-rozha-one {
   font-family: 'Rozha One', serif;
@@ -7,27 +19,64 @@ body {
 .f-oswald {
   font: 'Oswald', serif;
 }
-
-/* Navbar */
-#navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background: #333;
+#headcontainer {
+  padding-bottom: 1em;
+  border-bottom: 3px solid #7d97ad
 }
-
-.header {
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 14px 16px;
+#my-name a {
   text-decoration: none;
+  color: #111;
+  font-size: 1.5em;
+  margin: 0.50em 0 0 0;
+  font-family: 'Rozha One', serif;
+}
+#job-title {
+  margin: -1em 0 0 0;
+  font-family: 'Oswald', serif;
 }
 
-/* Cellphones */
-@media screen and (min-width: 500px) and (max-width: 600px) {
-  .logo { max-width: 50%; }
+/*  Cellphones */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 /* Tablet */
 /* PC */
+@media screen and (min-width: 800px) {
+  .logo {
+    max-width: 20%;
+    float: left;
+  }
+  #my-name a {
+    font-size: 3em;
+    float: right;
+  }
+  #job-title {
+    float: right;
+  }
+
+}
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
