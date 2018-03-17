@@ -12,10 +12,20 @@ a {
 }
 h2 {
   text-align: center;
+  font-family: "Rozha One", serif;
 }
 img {
   max-width: 100%;
   height: auto;
+}
+footer {
+  background-color: rgba(2, 179, 228, 0.2);
+}
+/* Manage text for footer */
+footer h3 {
+  font-size: 0.8em;
+  text-align: center;
+  font-family: "Nixie One", serif;
 }
 .temp-red {
   background-color: red;
@@ -85,21 +95,49 @@ img {
   font-size: 1.7em;
   font-family: 'Oswald', serif;
 }
-/* .square {
-  max-width: 100%;
-  height: auto;
-} */
+#my-words {
+  font-family: "Oswald", serif;
+}
+
 /*  Cellphones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 530px) {
 	.col {  margin: 1% 0 1% 0%; }
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
   .heroimage {
     width: 100%;
     float: left;
   }
+  .logo, .proj-img {
+    width: 70%;
+    margin: 0 15% 0 15%;
+  }
+  #my-name, #job-title, #introtext {
+    text-align: center;
+    width: 70%;
+    margin: 0 15% 0 15%;
+  }
 }
 /* Tablet */
-@media screen and (min-width: 800px) {
+@media only screen and (max-width: 801px) {
+  .col {  margin: 1% 0 1% 0%; }
+  .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+  .heroimage {
+    width: 80%;
+    float: left;
+    margin: 2% 10% 0 10%;
+  }
+  .logo, .proj-img {
+    width: 40%;
+    margin: 0 30% 0 30%;
+  }
+  #my-name, #job-title, #introtext {
+    text-align: center;
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 801px) {
   .logo {
     max-width: 20%;
     float: left;
@@ -123,15 +161,7 @@ img {
     max-width: 20%;
     margin-left: 5%;
   }
-  /* .project-section {
-    width: 100%
-    margin: auto;
-  } */
   .proj-img {
     width: 100%;
-    /* float: left; */
-
   }
-/* PC */
-
 }
